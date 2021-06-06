@@ -33,5 +33,5 @@ yarn create @vitejs/app
 yarn add --dev eslint prettier eslint-config-prettier eslint-plugin-prettier eslint-plugin-vue @typescript-eslint/parser @typescript-eslint/eslint-plugin
 
 cnpm install vue-router@4 vuex@next -S
-
+cnpm install @types/node -D
 `
