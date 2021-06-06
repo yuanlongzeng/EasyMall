@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 
 import { store, key } from './store'
-// import 'lib-flexible/flexible'
+import 'lib-flexible/flexible'
 import Vant from "vant"
 import App from './App.vue'
 import router from './router'

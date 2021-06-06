@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw} from "vue-router"
-import HelloWold from "../components/HelloWorld.vue"
+import HelloWold from "@c/HelloWorld.vue"
 
 const routes: Array<RouteRecordRaw> = [
     {
@@ -10,7 +10,17 @@ const routes: Array<RouteRecordRaw> = [
     {
         path: "/hello/:name",
         name: "About",
-        component: () => import("../components/About.vue"),
+        component: () => import("@c/About.vue"),
+    },
+    {
+        path: "/user/register",
+        name: "Register",
+        component: () => import("views/user/Register.vue"),
+    },
+    {
+        path: "/user/login",
+        name: "Login",
+        redirect: '/'
     },
 ]
 
