@@ -1,13 +1,15 @@
 <template>
-  <h1>{{ msg }}</h1>
+  <div>
+    <h1>{{ msg }}</h1>
 
-  <button @click="Add">count is: {{ count }}</button>
+  <van-button type="primary" @click="Add">count is: {{ count }}</van-button>
+  </div>
 
 </template>
 
 <script lang="ts">
 import { ref, defineComponent, computed } from 'vue'
-import { useStore } from '_vuex@4.0.1@vuex';
+import { useStore } from 'vuex';
 import { key } from '../store';
 export default defineComponent({
   name: 'HelloWorld',
@@ -29,19 +31,12 @@ export default defineComponent({
 </script>
 
 <style scoped>
-a {
-  color: #42b983;
-}
 
-label {
-  margin: 0 0.5em;
+div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0.5rem;
   font-weight: bold;
 }
 
-code {
-  background-color: #eee;
-  padding: 2px 4px;
-  border-radius: 4px;
-  color: #304455;
-}
 </style>

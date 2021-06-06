@@ -34,4 +34,9 @@ yarn add --dev eslint prettier eslint-config-prettier eslint-plugin-prettier esl
 
 cnpm install vue-router@4 vuex@next -S
 cnpm install @types/node -D
+cnpm i vant@next -S
+cnpm i babel-plugin-import/ts-import-plugin -D   // 按需引入组件??
+//rem适配
+yarn add lib-flexible -S  //font-size 适配
+yarn add postcss-pxtorem -D  //编译的时候对 px 单位转换为 rem 单位--统一使用rem就不需要了
 `
