@@ -6,13 +6,13 @@ import path from 'path'
 export default defineConfig({
   plugins: [vue()],
   /**
-  * 与“根”相关的目录，构建输出将放在其中。如果目录存在，它将在构建之前被删除。
-  * @default 'dist'
-  */
+   * 与“根”相关的目录，构建输出将放在其中。如果目录存在，它将在构建之前被删除。
+   * @default 'dist'
+   */
   // outDir: 'dist',
   server: {
     // hostname: '0.0.0.0',
-    host: "localhost",
+    host: 'localhost',
     port: 3001,
     // // 是否自动在浏览器打开
     // open: true,
@@ -26,19 +26,19 @@ export default defineConfig({
         changeOrigin: true,
         // ws: true,
         rewrite: (pathStr) => pathStr.replace('/api', '')
-      },
-    },
+      }
+    }
   },
   resolve: {
     // 导入文件夹别名
     alias: {
       '@': path.resolve(__dirname, './src'),
-      "@c": path.resolve(__dirname, "./src/components"),
-      "@api": path.resolve(__dirname, "./src/api"),
+      '@c': path.resolve(__dirname, './src/components'),
+      '@api': path.resolve(__dirname, './src/api'),
       views: path.resolve(__dirname, './src/views'),
       utils: path.resolve(__dirname, './src/utils'),
-      assets: path.resolve(__dirname, "./src/assets"),
-      store: path.resolve(__dirname, "./src/store"),
-    },
+      assets: path.resolve(__dirname, './src/assets'),
+      store: path.resolve(__dirname, './src/store')
+    }
   }
 })

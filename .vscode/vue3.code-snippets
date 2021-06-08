@@ -1,0 +1,59 @@
+{
+	// vue3 + ts
+	"Vue-3": {
+		"scope": "vue",
+		"prefix": "vue-3",
+		"body": [
+			"<template>",
+			"  <div class=\"box\"> {{ hello }} </div>",
+			"</template>",
+			"<script setup lang=\"ts\">",
+			"  import { ref } from 'vue';",
+			"  const hello = ref('hello world');",
+			"</script>",
+			"<style lang=\"scss\" scoped>",
+			"  .box {",
+			"\tcolor: #60d659;",
+			"  }",
+			"</style>\n"
+		],
+		"description": "Vue-3"
+	},
+	"Vue-3-Setup": {
+		"scope": "vue",
+		"prefix": "vue-3-setup",
+		"body": [
+			"<script setup lang=\"ts\">",
+			"  import { ref } from 'vue';",
+			"  const hello = ref('hello world');",
+			"</script>",
+		],
+		"description": "Vue3 setup"
+	},
+	"Vue-3-ts": {
+		"scope": "vue",
+		"prefix": "vue-3-ts",
+		"body": [
+			"<script lang=\"ts\">",
+			"  import {",
+			"    onMounted,",
+			"    ref,",
+			"    reactive,",
+			"    SetupContext,",
+			"    getCurrentInstance,",
+			"  } from \"vue\";",
+			"  interface Data {",
+			"    [key: string]: unknown;",
+			"  }\n",
+			"  export default {",
+			"    setup(props: Data, context: SetupContext) {",
+			"      const { proxy } = getCurrentInstance() as any,",
+			"          foo = ref(0);",
+			"      return { foo }",
+			"    }",
+			"  }",
+			"</script>",
+		],
+		"description": "Vue3 setup"
+	}
+}

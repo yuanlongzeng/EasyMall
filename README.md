@@ -41,3 +41,7 @@ cnpm i add lib-flexible -S  //font-size 适配
 cnpm i add postcss-pxtorem -D  //编译的时候对 px 单位转换为 rem 单位--统一使用rem就不需要了
 cnpm install axios -S
 `
+
+## VSCode 插件
+安装prettier插件来管理你的代码格式化风格
+使用setup的方式编写vue那么请禁用vetur插件，如果不是那么禁用volar插件，这两个插件尽量不要同时开启，避免代码提示和格式化出现问题

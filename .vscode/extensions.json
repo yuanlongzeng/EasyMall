@@ -1,0 +1,18 @@
+{
+    "recommendations": [
+        "editorconfig.editorconfig",
+        "dbaeumer.vscode-eslint",
+        "slevesque.vscode-hexdump",
+        "k--kato.intellij-idea-keybindings",
+        "zignd.html-css-class-completion",
+        "ritwickdey.liveserver",
+        "techer.open-in-browser",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "visualstudioexptteam.vscodeintellicode",
+        "johnsoncodehk.volar",
+        "hookyqr.beautify",
+        "nash.awesome-flutter-snippets",
+        "octref.vetur"
+    ]
+}
