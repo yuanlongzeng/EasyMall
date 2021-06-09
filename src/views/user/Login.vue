@@ -52,7 +52,7 @@
         password: dataLogin.password
       })
         .then((res: any) => {
-          console.log(res)
+          router.push({ path: '/' })
           Toast('登录成功')
         })
         .catch((err: any) => {

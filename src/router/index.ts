@@ -1,11 +1,10 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
-import HelloWold from '@c/HelloWorld.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'HelloWorld',
-    component: HelloWold
+    name: 'Home',
+    component: () => import('views/home/Home.vue')
   },
   {
     path: '/hello/:name',
@@ -20,7 +19,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/user/login',
     name: 'Login',
-    redirect: '/'
+    component: () => import('views/user/Login.vue')
   }
 ]
 
